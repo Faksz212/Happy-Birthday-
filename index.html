@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebuah Kejutan Untukmu!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="landing-page" id="landingPage">
+        <div class="gift-box">
+            <div class="gift-lid"></div>
+            <div class="gift-body"></div>
+        </div>
+        <h2>Ada kejutan untukmu!</h2>
+        <button id="openButton" class="glowing-btn"><span>Buka Sekarang</span></button>
+    </div>
+
+    <main class="main-content" id="mainContent">
+        <audio id="birthdaySong" src="https://stream.audio.corp.google.com/happy-birthday-to-you-traditional.mp3" loop></audio>
+
+        <div class="flip-card-container">
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-front">
+                    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3dtMHE5ZmZnbW1oYjI1ZXhuc2NsdWJyNm42MXY5ZTRqODRwYXk4eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/s2qXK8wAvkHTO/giphy.gif" alt="Kue Ulang Tahun" class="birthday-gif">
+                    <h2>Klik kartu ini!</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Selamat Ulang Tahun, Khairunisa!</h1>
+                    <p class="wish">
+                        Semoga hari ini menjadi awal dari tahun yang penuh dengan kebahagiaan, kesehatan, dan kesuksesan. 
+                        Teruslah bersinar dan menjadi inspirasi bagi semua orang di sekitarmu.
+                    </p>
+                    <p class="from">With love, Teman Mu</p>
+                </div>
+            </div>
+        </div>
+        
+        <button id="confettiButton" class="confetti-btn">🎉 Sebarkan Kebahagiaan! 🎉</button>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
